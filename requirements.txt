@@ -2,12 +2,11 @@
 langchain>=0.2.0
 langchain-core>=0.2.0
 langchain-community>=0.2.0
+langgraph>=0.2.0
 
 # Mistral AI
 mistralai>=1.0.0
-
-# LangChain integration (if using ChatOpenAI with OpenAI-compatible endpoint)
-langchain-openai>=0.1.0
+langchain-mistralai>=0.1.0
 
 # Tavily Search Tool
 tavily-python>=0.3.0
@@ -43,4 +42,6 @@ pydantic>=2.5.0
 
 # HTML parsing
 html5lib>=1.1
+
+# UI
 streamlit>=1.30.0
