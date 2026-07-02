@@ -43,3 +43,4 @@ pydantic>=2.5.0
 
 # HTML parsing
 html5lib>=1.1
+streamlit>=1.30.0
