@@ -2,6 +2,20 @@
 
 A multi-agent research assistant built with **LangChain** and **Mistral AI**. Give it a topic, and four agents/chains work together to search the web, read the most relevant source in depth, write a structured report, and critique it — all visible through a live Streamlit UI.
 
+**Live demo:** [multi-agent-research-system-vzra.onrender.com](https://multi-agent-research-system-vzra.onrender.com/)
+**Demo video:** [link to video](#) <!-- upload the mp4 to the repo or a Drive/YouTube link and drop it here -->
+
+---
+
+## Screenshots
+
+<!-- Drop your actual app screenshot in an /assets folder and reference it, e.g.: -->
+<!-- ![App running](assets/app-screenshot.png) -->
+
+![Pipeline overview](assets/pipeline-diagram.png)
+
+*The four-stage pipeline — Search, Reader, Writer, Critic — all sharing a single Mistral model instance.*
+
 ---
 
 ## How it works
@@ -10,12 +24,12 @@ A multi-agent research assistant built with **LangChain** and **Mistral AI**. Gi
 Topic
   │
   ▼
-┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│  🔍 Search Agent │ ──▶ │  📖 Reader Agent │ ──▶ │  ✍️ Writer Chain │ ──▶ │  🧐 Critic Chain │
-│  finds sources   │     │  scrapes the     │     │  drafts a        │     │  scores and      │
-│  on the web      │     │  most relevant   │     │  structured       │     │  critiques the    │
-│                   │     │  URL for depth   │     │  report           │     │  report           │
-└─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘
+┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
+│  🔍 Search Agent  │ ──▶ │  📖 Reader Agent  │ ──▶ │  ✍️ Writer Chain  │ ──▶ │  🧐 Critic Chain  │
+│  finds sources    │     │  scrapes the      │     │  drafts a         │     │  scores and       │
+│  on the web       │     │  most relevant    │     │  structured       │     │  critiques the    │
+│                    │     │  URL for depth    │     │  report           │     │  report           │
+└──────────────────┘     └──────────────────┘     └──────────────────┘     └──────────────────┘
 ```
 
 | Stage | Type | Tool used | Purpose |
@@ -99,6 +113,8 @@ Prompts you for a topic, then prints each stage's output directly to the console
 streamlit run app.py
 ```
 Then open the URL it prints (usually `http://localhost:8501`).
+
+Or just use the **[live version](https://multi-agent-research-system-vzra.onrender.com/)** — no setup needed.
 
 The UI gives you:
 - Live per-agent status badges (Pending → Running → Done/Error)
