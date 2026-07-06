@@ -7,16 +7,7 @@ A multi-agent research assistant built with **LangChain** and **Mistral AI**. Gi
 
 ---
 
-## Screenshots
 
-<!-- Drop your actual app screenshot in an /assets folder and reference it, e.g.: -->
-<!-- ![App running](assets/app-screenshot.png) -->
-
-![Pipeline overview](assets/pipeline-diagram.png)
-
-*The four-stage pipeline — Search, Reader, Writer, Critic — all sharing a single Mistral model instance.*
-
----
 
 ## How it works
 
