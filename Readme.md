@@ -3,7 +3,7 @@
 A multi-agent research assistant built with **LangChain** and **Mistral AI**. Give it a topic, and four agents/chains work together to search the web, read the most relevant source in depth, write a structured report, and critique it — all visible through a live Streamlit UI.
 
 **Live demo:** [multi-agent-research-system-vzra.onrender.com](https://multi-agent-research-system-vzra.onrender.com/)
-**Demo video:** [link to video](#) <!-- upload the mp4 to the repo or a Drive/YouTube link and drop it here -->
+ -->
 
 ---
 
